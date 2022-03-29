@@ -1,7 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+/*
+ * @LastEditTime: 2022-03-29 18:22:53
+ * @Description:
+ * @Date: 2022-03-29 17:56:47
+ * @Author: wangshan
+ * @LastEditors: wangshan
+ */
+import React from "react";
+import logo from "./logo.svg";
+import { Counter } from "./features/counter/Counter";
+import "@/style/App.css";
 
 function App() {
   return (

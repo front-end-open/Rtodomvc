@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-03-29 18:22:53
+ * @LastEditTime: 2022-03-31 00:25:41
  * @Description:
  * @Date: 2022-03-29 17:56:47
  * @Author: wangshan
@@ -9,11 +9,11 @@ import React from "react";
 import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import "@/style/App.css";
-
+import TodoControl from "./TODO/TodoControl";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -57,7 +57,8 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
+      </header> */}
+      <TodoControl />
     </div>
   );
 }

@@ -18,3 +18,9 @@
   position: relative;
   width: 50px;
 }
+.item button {
+  display: none;
+}
+.item:hover button {
+  display: block;
+}

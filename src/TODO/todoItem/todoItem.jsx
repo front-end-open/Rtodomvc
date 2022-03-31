@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-04-01 00:33:26
+ * @LastEditTime: 2022-04-01 00:49:50
  * @Description:
  * @Date: 2022-03-31 16:08:39
  * @Author: wangshan
@@ -11,7 +11,10 @@ import { Button } from "@/components/Button/index";
 import { createRef } from "react";
 export function TodoItem(props) {
   const CheckBoxRef = createRef();
-
+  function handleClick(e) {
+    // 捕获按钮事件处理器
+    console.log(e);
+  }
   return (
     <div className="item">
       <div className="item-left">
@@ -21,7 +24,7 @@ export function TodoItem(props) {
         <div className="left-title-content">{props.todo.title}</div>
       </div>
       <div className="item-right">
-        <Button />
+        <Button onClick={handleClick} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-04-01 02:35:38
+ * @LastEditTime: 2022-04-01 03:13:04
  * @Description: todo控制
  * @Date: 2022-03-31 00:24:13
  * @Author: wangshan
@@ -112,14 +112,15 @@ export default function TodoControl(props) {
 
   return (
     <div className="todo-wrap">
-      <button onClick={handleResetTodos}>reset</button>
-      <input
-        type="text"
-        value={ipt}
-        onKeyDown={handleEnter}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <div>{ipt}</div>
+      <div className="input">
+        <input
+          type="text"
+          value={ipt}
+          placeholder="What need to be done?"
+          onKeyDown={handleEnter}
+          onChange={(e) => setInput(e.target.value)}
+        />
+      </div>
 
       <div>
         {todos.map((v) => {

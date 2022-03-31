@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-03-31 15:56:45
+ * @LastEditTime: 2022-04-01 03:15:10
  * @Description:
  * @Date: 2022-03-29 17:56:47
  * @Author: wangshan
@@ -58,7 +58,7 @@ function App() {
           </a>
         </span>
       </header> */}
-      <h3>TODOMVC</h3>
+      <h3>TODOS</h3>
       <TodoControl />
     </div>
   );

@@ -1,10 +1,38 @@
 .todo-wrap {
   width: 50vmax;
   margin: auto;
-  border: 2px solid red;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  /* border: 1px solid red; */
+}
+.todo-wrap .input {
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.todo-wrap .input > input {
+  margin: 0;
+  padding: 0;
+  /* padding-left: 2px; */
+  width: 100%;
+  box-sizing: content-box;
+  font-size: 50px;
+  outline: none;
+  height: 100%;
+  border: none;
+}
+.todo-wrap .input > input::-webkit-input-placeholder {
+  /* placeholder颜色 */
+  color: #aab2bd;
+  /* placeholder字体大小 */
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 100;
 }
 .bottom-control {
   padding: 24px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgb(0 0 0 / 20%);
 }
 .bottom-control .radio-group {
   width: 50%;

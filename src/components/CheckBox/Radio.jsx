@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-04-01 02:37:41
+ * @LastEditTime: 2022-04-01 03:00:16
  * @Description:
  * @Date: 2022-04-01 00:58:07
  * @Author: wangshan
@@ -20,7 +20,7 @@ export const Radio = forwardRef((props, ref) => {
           ref={ref}
           onChange={props.onCheckout}
         />
-        {props.status}
+        <span> {props.status}</span>
       </label>
     </div>
   );

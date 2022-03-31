@@ -5,8 +5,16 @@
 }
 .item-left {
   display: flex;
+  flex: 1;
+}
+.item-left .check-wrap {
+  width: 100px;
+}
+.item-left .left-title-content {
+  flex: 1;
+  text-align: justify;
 }
 .item-right {
+  position: relative;
   width: 50px;
-  flex: 1;
 }

@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-03-31 23:12:15
+ * @LastEditTime: 2022-04-01 00:17:17
  * @Description: CheckBox
  * @Date: 2022-03-31 22:48:17
  * @Author: wangshan
@@ -11,7 +11,7 @@ import { forwardRef } from "react";
 export const CheckBox = forwardRef((props, ref) => {
   return (
     <div className="CheckBox">
-      <input type="checkbox" ref={ref} />
+      <input type="checkbox" defaultChecked={props.isCom} ref={ref} />
     </div>
   );
 });

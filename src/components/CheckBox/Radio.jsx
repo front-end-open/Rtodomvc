@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-04-01 01:24:46
+ * @LastEditTime: 2022-04-01 02:37:41
  * @Description:
  * @Date: 2022-04-01 00:58:07
  * @Author: wangshan
@@ -12,6 +12,7 @@ export const Radio = forwardRef((props, ref) => {
     <div className="Radio">
       <label htmlFor={props.status}>
         <input
+          defaultChecked={props.status === "All" ? true : false}
           id={props.status}
           name="status"
           value={props.status}

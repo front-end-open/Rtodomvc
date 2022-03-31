@@ -30,4 +30,5 @@
 
 .finish {
   text-decoration: line-through;
+  color: #ccc;
 }

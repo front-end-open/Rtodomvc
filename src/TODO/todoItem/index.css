@@ -3,6 +3,9 @@
   padding: 24px 0;
   border-top: 1px solid #ccc;
 }
+.item:last-child {
+  border-bottom: 1px solid #ccc;
+}
 .item-left {
   display: flex;
   flex: 1;
@@ -23,4 +26,8 @@
 }
 .item:hover button {
   display: block;
+}
+
+.finish {
+  text-decoration: line-through;
 }

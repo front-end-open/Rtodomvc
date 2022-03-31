@@ -3,6 +3,14 @@
   margin: auto;
   border: 2px solid red;
 }
+.bottom-control {
+  padding: 24px;
+}
+.bottom-control .radio-group {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
 
 @media screen and (max-width: 768px) {
   html {

@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2022-04-01 00:49:50
+ * @LastEditTime: 2022-04-01 01:43:40
  * @Description:
  * @Date: 2022-03-31 16:08:39
  * @Author: wangshan
@@ -17,7 +17,9 @@ export function TodoItem(props) {
   }
   return (
     <div className="item">
-      <div className="item-left">
+      <div
+        className={[props.todo.isCompoplete ? "item-left finish" : "item-left"]}
+      >
         <div className="check-wrap">
           <CheckBox ref={CheckBoxRef} isCom={props.todo.isCompoplete} />
         </div>

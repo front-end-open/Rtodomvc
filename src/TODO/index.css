@@ -1,0 +1,17 @@
+.todo-wrap {
+  width: 50vmax;
+  margin: auto;
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 25px;
+  }
+}

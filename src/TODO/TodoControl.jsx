@@ -1,12 +1,12 @@
 /*
- * @LastEditTime: 2022-04-01 03:13:04
+ * @LastEditTime: 2022-04-01 14:27:09
  * @Description: todo控制
  * @Date: 2022-03-31 00:24:13
  * @Author: wangshan
  * @LastEditors: wangshan
  */
 import { Radio } from "@/components/CheckBox/Radio";
-import { createRef, useEffect, useState } from "react";
+import { createRef, useState } from "react";
 import "./index.css";
 import { TodoItem } from "./todoItem/todoItem";
 import { Button } from "@/components/Button/index";
@@ -41,7 +41,7 @@ export default function TodoControl(props) {
     handleResetInput();
   }
   function handleEnter(e) {
-    if (e.keyCode == 13 && e.target.value) {
+    if (e.keyCode === 13 && e.target.value) {
       handleAddTodo();
     } else {
       console.warn("请输入合法值");
@@ -51,10 +51,6 @@ export default function TodoControl(props) {
   // 重置输入
   function handleResetInput() {
     setInput("");
-  }
-  function handleResetTodos() {
-    setTodo([]);
-    setSourceTodo([]);
   }
 
   // 待办项过滤
@@ -79,14 +75,18 @@ export default function TodoControl(props) {
     // console.log(id);
     let copytodo = todos;
     copytodo = copytodo.filter((v) => {
-      if (v.idx != id) {
+      if (v.idx !== id) {
         return true;
+      } else {
+        return false;
       }
     });
     let copystodo = sourcetodo;
     copystodo = copystodo.filter((v) => {
-      if (v.idx != id) {
+      if (v.idx !== id) {
         return true;
+      } else {
+        return false;
       }
     });
     setTodo([...copytodo]);

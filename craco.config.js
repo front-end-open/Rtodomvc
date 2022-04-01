@@ -2,7 +2,7 @@
  * @Author: wangshan
  * @Date: 2022-02-26 02:21:24
  * @LastEditors: wangshan
- * @LastEditTime: 2022-04-01 16:42:54
+ * @LastEditTime: 2022-04-01 17:17:02
  * @Description:
  */
 const path = require("path");
@@ -14,15 +14,10 @@ module.exports = {
     alias: {
       "@": pathRsolve("src"),
     },
-
-    plugins: [
-      //   new HtmlWebpackPlugin({
-      //     title: "RTodo-App",
-      //     filename: "./public/index.html",
-      //     // template: "./public/index.html",
-      //     base: "/resume",
-      //   }),
-    ],
+    configure: (webpackConfig, { env, paths }) => {
+      webpackConfig.output.publicPath = "/Rtodomvc";
+      return webpackConfig;
+    },
   },
   plugins: [
     {

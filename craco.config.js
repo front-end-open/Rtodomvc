@@ -2,7 +2,7 @@
  * @Author: wangshan
  * @Date: 2022-02-26 02:21:24
  * @LastEditors: wangshan
- * @LastEditTime: 2022-04-01 16:39:21
+ * @LastEditTime: 2022-04-01 16:42:54
  * @Description:
  */
 const path = require("path");
@@ -22,7 +22,6 @@ module.exports = {
       //     // template: "./public/index.html",
       //     base: "/resume",
       //   }),
-      new HtmlBasePathPlugin(),
     ],
   },
   plugins: [

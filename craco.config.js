@@ -2,12 +2,11 @@
  * @Author: wangshan
  * @Date: 2022-02-26 02:21:24
  * @LastEditors: wangshan
- * @LastEditTime: 2022-02-27 03:44:56
+ * @LastEditTime: 2022-04-01 16:39:21
  * @Description:
  */
 const path = require("path");
 const CracoLessPlugin = require("craco-less");
-
 const pathRsolve = (pth) => path.join(__dirname, pth);
 
 module.exports = {
@@ -15,6 +14,16 @@ module.exports = {
     alias: {
       "@": pathRsolve("src"),
     },
+
+    plugins: [
+      //   new HtmlWebpackPlugin({
+      //     title: "RTodo-App",
+      //     filename: "./public/index.html",
+      //     // template: "./public/index.html",
+      //     base: "/resume",
+      //   }),
+      new HtmlBasePathPlugin(),
+    ],
   },
   plugins: [
     {
